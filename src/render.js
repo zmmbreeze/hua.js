@@ -13,5 +13,5 @@ var Render = function (pen) {
  * @param {Layer} layer
  */
 Render.prototype.rend = function (layer) {
-    this.pen.rend(layer);
+    this.pen(layer);
 };

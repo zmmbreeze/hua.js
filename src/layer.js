@@ -75,7 +75,7 @@ Layer.prototype.rend = function () {
  * update
  */
 Layer.prototype.clear = function () {
-    // TODO
+    this.context.clearRect(0, 0, this.getWidth(), this.getHeight());
 };
 
 /**
@@ -100,5 +100,13 @@ Layer.prototype.getWidth = function () {
  */
 Layer.prototype.getHeight = function () {
     return this.canvas.height;
+};
+
+Layer.prototype.getBoundWidth = function () {
+    return this.canvas.offsetWidth;
+};
+
+Layer.prototype.getBoundHeight = function () {
+    return this.canvas.offsetHeight;
 };
 
